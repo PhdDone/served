@@ -30,6 +30,7 @@ find_path(RE2_INCLUDE_DIR re2/re2.h NO_DEFAULT_PATH PATHS
   /usr/include
   /opt/local/include
   /usr/local/include
+  /home/ydong/re2/include
 )
 
 set(RE2_NAMES ${RE2_NAMES} re2)
@@ -38,6 +39,7 @@ find_library(RE2_LIBRARY NAMES ${RE2_NAMES} NO_DEFAULT_PATH PATHS
   /usr/local/re2/lib
   /opt/local/lib
   /usr/lib
+  /home/ydong/re2/lib
 )
 
 if (RE2_INCLUDE_DIR AND RE2_LIBRARY)
